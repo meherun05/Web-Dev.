@@ -1,0 +1,81 @@
+.header{
+    width: 1200px;
+    height: 100px;
+    background: rgba(2, 34, 5, 0.87);
+    margin: 0 auto;
+}
+.logo{
+    float: left;
+}
+
+.logo img{
+    width: 100px;height: 100px;
+}
+.Menu{
+    float: right;
+}
+.logo img{
+    width: 50px;
+    height: 50px;
+    padding: 20px;
+}
+.Menu{
+    float: right;
+}
+.Menu ul{
+    list-style: none;
+}
+.Menu li{
+    display: inline;
+}
+.Menu ul li a{
+    text-decoration: none;
+    padding-right: 20px;
+    color: rgba(220, 231, 246, 0.863);
+    font-size: 20px;
+    line-height: 70px;
+}
+.logo h1 {
+    float: right;
+    color: rgb(248, 246, 246);
+    font-style: italic;
+}
+/*slider part start*/
+.slider{
+    width: 1200px;
+    height: 300px;
+    margin: 0% auto;
+    color: rgb(214, 167, 167);
+    background: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.6)), url(./image/my\ dpi.jpg);
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: auto;
+}
+.slider h1{
+    position: absolute;
+    top: 20%;
+    left: 35%;
+}
+.slider p{
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    color: rgb(217, 203, 203);
+}
+.slider a{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    text-decoration: none;
+    border: 1px ;
+    padding: 10px 15px;
+    border-radius: 20px;
+    background: rgb(238, 231, 229);
+    color: rgb(221, 188, 188);
+}
+.slider a:hover{
+    background-color: rgb(219, 75, 49);
+    color: rgb(230, 65, 56);
+}
+
+/*slider part end*/
