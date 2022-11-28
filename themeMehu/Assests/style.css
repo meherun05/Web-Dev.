@@ -1,0 +1,170 @@
+
+Theme Name: Theme Mehu
+Theme URI:
+Author: the WordPress team
+
+Description: Our default theme for 2020 is designed to take full advantage of the flexibility of the block editor. Organizations and businesses have the ability to create dynamic landing pages with endless layouts using the group and column blocks. The centered content column and fine-tuned typography also makes it perfect for traditional blogs. Complete editor styles give you a good idea of what your content will look like, even before you publish. You can give your site a personal touch by changing the background colors and the accent color in the Customizer. The colors of all elements on your site are automatically calculated based on the colors you pick, ensuring a high, accessible color contrast for your visitors.
+Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
+Version: 1.3
+Requires at least: 5.0
+Text Domain: twentytwenty
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(./images/bg_main.gif) center;
+}
+/* Header Part Start */
+.cont{
+max-width: 1020px;
+margin: 0 auto;
+padding: 0 10px;
+}
+header{
+    background-color: rgb(185, 15, 185);
+    height: 30px;
+    border-bottom: 2px solid red;
+    color: white;
+    font-size: 12px;
+}
+.header_right{
+   display: flex;
+   justify-content: end;
+}
+.header_left{
+    line-height: 30px;
+
+}
+.header_right p{
+    border-right: 1px solid white;
+    padding-right: 10px;
+    line-height: 30px;
+}
+
+.header_right a{
+    padding-left: 10px;
+    text-decoration: none;
+    color: white;
+    padding-top: 5px;
+}
+/* Header part End */
+/* Logo Part Start */
+.logo{
+    height: 110px;
+}
+.logo_left{
+    line-height: 110px;
+}
+.logo_search input{
+width: 65%;
+border: 1px solid #ddd;
+padding: 5px;
+font-size: 13px;
+border-radius: 5px;
+}
+.logo_search{
+    padding-top: 45px;
+}
+button{
+    border: 1px solid#ddd;
+    padding: 5px;
+    font-size: 13px;
+    border-radius: 5px;
+}
+.logo1{
+    border-right: 2px solid#eee;
+    padding-right: 5px;
+    margin-right: 10px;
+    height: 50px;
+}
+.logo2{
+    height: 30px;
+}
+/* Logo Part End */
+.banner{
+    border: 2px solid red;
+    padding: 10px;
+}
+/* hero main part start */
+.slider{
+    padding: 10px 0;
+}
+.slider img{
+    height: 300px;
+}
+/* tab part start */
+.tab_1 a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: green;
+    font-size: 13px;
+}
+.tab_1 a:hover{
+    color: green;
+}
+/* tab part end */
+/* notice part start */
+.notice ul{
+    list-style: none;
+    width: 60%;
+    margin-top: 20px;
+}
+.notice{
+    margin:.5px;
+}
+.notice h4{
+    font-size: medium;
+    color: rgb(129, 22, 161);
+}
+.notice ul li a{
+    color: black;
+    
+}
+.notice ul li a:hover{
+    color: green;
+}
+.tab-content{
+    color: green;
+}
+.btn{
+    align-content: center;
+}
+.btn a{
+    text-align: center;
+    text-decoration: none;
+   padding: 5px;
+    background-color: rgb(90, 78, 78);
+    color: #eee;
+}
+.btn a:hover{
+    color: black;
+}
+/* notice part end */
+/* hero main part end */
+/* footer part start */
+.fb_left a{
+    font-size: 12px;
+  
+}
+.fb_left p{
+font-size: 10px;
+padding-left: 20px;
+}
+.fb_right p{
+    font-size: 9px;
+    padding-top: 5px;
+}
+/* footer part end */
+.menu-item{
+    padding-right: 30px;
+}
+.menu-item a{
+    text-decoration: none;
+}
