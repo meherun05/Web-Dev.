@@ -97,6 +97,8 @@ button{
 }
 .slider img{
     height: 300px;
+    display: inline-block;
+
 }
 /* tab part start */
 .tab_1 a{

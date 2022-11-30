@@ -104,29 +104,28 @@
     <div class="row hero">
       <div class="hero_main col-lg-8">
         <div class="banner">
-          <a href="#"><img src="./images/padmabanner.jpg" class="d-block w-100" alt=""></a>
+          <a href="#">
+            <?php dynamic_sidebar('mainbanner'); ?>
+            <!-- <img src="./images/padmabanner.jpg" class="d-block w-100" alt=""> -->
+          </a>
         </div>
         <div class="slider">
           <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <?php $qry1= new WP_Query([
+              'post_type'=> 'post',
+              'category_name'=> 'slider'
+            ]);?>
             <div class="carousel-inner">
+            <?php while($qry1->have_posts()):$qry1->the_post();?>
               <div class="carousel-item active">
-                <img src="./images/Slider/4-02.jpg" class="d-block w-100" alt="...">
+               <?php the_post_thumbnail();?>
+                
               </div>
-              <div class="carousel-item">
-                <img src="./images/Slider/Banner-1.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./images/Slider/Banner-2.jpg" class="d-block w-100" alt="...">
-              </div>
+              <?php endwhile;?>
+              
+              
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+            
           </div>
         </div>
         <div class="tab">
@@ -232,11 +231,13 @@
         <div class="notice">
           <h4>উদ্যোগ</h4>
           <ul>
-            <li><a href=""> বাংলাদেশ সরকারের সপ্তম পঞ্চবার্ষিক পরিকল্পনা (২০১৬-২০২০)</a></li>
+            <li><a href=""> 
+              <?php dynamic_sidebar('list');?>
+            <!-- বাংলাদেশ সরকারের সপ্তম পঞ্চবার্ষিক পরিকল্পনা (২০১৬-২০২০)</a></li>
             <li><a href=""> বাংলাদেশে ঘূর্ণিঝড়ের জরুরি প্রস্তুতি পরিকল্পনা।</a></li>
             <li><a href="">বাংলাদেশ সরকারের ষষ্ঠ পঞ্চবার্ষিক পরিকল্পনা।</a></li>
             <li><a href=""> বাংলাদেশ সরকারের প্রেক্ষিত পরিকল্পনা (২০১০-২০২১)।</a></li>
-            <li><a href=""> দূর্যোগ ব্যবস্থাপনা জন্য জাতীয় পরিকল্পনা ২০১০-২০১৫।</a></li>
+            <li><a href=""> দূর্যোগ ব্যবস্থাপনা জন্য জাতীয় পরিকল্পনা ২০১০-২০১৫।</a></li> -->
           </ul>
         </div>
         <div class="others">
@@ -245,18 +246,23 @@
           </div>
         </div>
       </div>
+      <!-- sidebar satrt -->
       <div class="hero_side col-lg-4">
         <div class="side_img">
+          <a href="#">
+            <?php dynamic_sidebar('sideimg');?>
+            <!-- <img src="./images/Sidebar/Bangladesh-Directory.jpg" class="d-block w-100 mb-2" alt="">
+          </a>
           <a href="#"><img src="./images/Sidebar/Bangladesh-Directory.jpg" class="d-block w-100 mb-2" alt=""></a>
           <a href="#"><img src="./images/Sidebar/Bangladesh-Directory.jpg" class="d-block w-100 mb-2" alt=""></a>
           <a href="#"><img src="./images/Sidebar/Bangladesh-Directory.jpg" class="d-block w-100 mb-2" alt=""></a>
           <a href="#"><img src="./images/Sidebar/Bangladesh-Directory.jpg" class="d-block w-100 mb-2" alt=""></a>
-          <a href="#"><img src="./images/Sidebar/Bangladesh-Directory.jpg" class="d-block w-100 mb-2" alt=""></a>
-        </div>
+        </div> -->
         <h4>সকল বাতায়ন</h4>
         <div class="side_video">
           <h5>মুজিব১০০ আ্যাপ</h5>
-          <iframe width="315" height="200" src="https://www.youtube.com/embed/4Om3kZJL-qU" title="MUJIB100 APP | Speeches, Quotes, Books & More | Get Inspired Everyday" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <?php dynamic_sidebar('sidevideo');?>
+          <!-- <iframe width="315" height="200" src="https://www.youtube.com/embed/4Om3kZJL-qU" title="MUJIB100 APP | Speeches, Quotes, Books & More | Get Inspired Everyday" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
         </div>
       </div>
     </div>
@@ -311,12 +317,13 @@
       </div>
       <div class="col-lg-4 fb_right text-end">
         <p>পরিকল্পনা ও বাস্তবায়নে: এটুআই, মন্ত্রিপরিষদ বিভাগ, বিসিসি, বেসিস, ডিওআইসিটি</p>
+        <?php dynamic_sidebar('fbimg');?>
         <img src="./images/Footer/np-logo-set.png" alt="">
       </div>
     </div>
    </footer>
 <!-- Footer part end -->
-
+<?php wp_footer();?>
    
    
   
