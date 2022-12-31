@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.slider{
+    position: relative;
+}
+.logo{
+    position: absolute;
+    top: 20px;
+    padding: 5px;
+    z-index: 1;
+}
+.menu{
+    margin-top: 15px;
+}
+.menu li a{
+    text-decoration: none;
+    padding-right: 10px;
+    color:black;
+    margin: 20px;
+}
+.menu li a:hover{
+    background: green;
+}
+.card img {
+    margin-top: -50px;
+}
+.tt p{
+    font-size: 11px;
+}
+.foot{
+    background: rgb(74, 71, 71);
+padding-top: 30px;
+color: white;
+}
+.mm{
+    margin-top: 40px;
+}
+.fb{
+padding-left: 20px;
+    width: 1000px;
+    margin: 0 auto;
+    background: #000;
+    height: 40px;
+    line-height: 40px;
+}
