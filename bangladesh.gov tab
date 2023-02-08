@@ -1,0 +1,130 @@
+ <!-- tab start -->
+        <div class="tab">
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">জনপ্রিয় সেবা</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">নতুন সেবা</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">মোবাইল সেবা</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false" disabled>দপ্তর ভিত্তিক সেবা</button>
+            </li>
+          </ul>
+        
+          
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+           <?php
+           $tabs = new WP_Query([
+            'post_type'=>'post',
+            'category_name'=>'sab'
+           ]);
+           ?>
+                <div class="row">
+                <?php 
+                while($tabs->have_posts()){$tabs->the_post();
+                ?>
+                    <div class="col-lg-2 text-center">
+                      <?php the_post_thumbnail();?>
+                      <a href="#"><img src="./assets/image/Tab/postal.png" alt=""></a>
+                      <?php the_title();?>
+                      <p>
+                        কল সেন্টার                                </p>
+                    </div>
+                    <?php }?>
+                    <div class="col-lg-2 text-center">
+                      <a href="#"><img src="./assets/image/Tab/tin.png" alt=""></a>
+                      <p>মৎস্য ও প্রাণী</p>
+                    </div>
+                    <div class="col-lg-2 text-center">
+                      <a href="#"><img src="./assets/image/Tab/mobile_service.png" alt=""></a>
+                      <p>মোবাইল সেবা</p>
+                    </div>
+                    <div class="col-lg-2 text-center">
+                      <a href="#"><img src="./assets/image/tab/transport.png" alt=""></a>
+                      <p>হেল্পডেস্ক</p>
+                  </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                <div class="row">
+                    <div class="col-lg-2 text-center">
+                      <a href="#"><img src="./assets/image/Tab/your_question.png" alt=""></a>
+                      <p>কৃষি</p>
+                    </div>
+                    <div class="col-lg-2 text-center">
+                      <a href="#"><img src="./assets/image/Tab/postal.png" alt=""></a>
+                      <p>
+                        কল সেন্টার                                </p>
+                    </div>
+                    <div class="col-lg-2 text-center">
+                      <a href="#"><img src="./assets/image/Tab/tin.png" alt=""></a>
+                      <p>মৎস্য ও প্রাণী</p>
+                    </div>
+                    <div class="col-lg-2 text-center">
+                      <a href="#"><img src="./assets/image/Tab/mobile_service.png" alt=""></a>
+                      <p>মোবাইল সেবা</p>
+                    </div>
+                    <div class="col-lg-2 text-center">
+                      <a href="#"><img src="./assets/image/tab/transport.png" alt=""></a>
+                      <p>হেল্পডেস্ক</p>
+                  </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+                <div class="row">
+                    <div class="col-lg-2 text-center">
+                      <a href="#"><img src="./assets/image/Tab/your_question.png" alt=""></a>
+                      <p>কৃষি</p>
+                    </div>
+                    <div class="col-lg-2 text-center">
+                      <a href="#"><img src="./assets/image/Tab/postal.png" alt=""></a>
+                      <p>
+                        কল সেন্টার                                </p>
+                    </div>
+                    <div class="col-lg-2 text-center">
+                      <a href="#"><img src="./assets/image/Tab/tin.png" alt=""></a>
+                      <p>মৎস্য ও প্রাণী</p>
+                    </div>
+                    <div class="col-lg-2 text-center">
+                      <a href="#"><img src="./assets/image/Tab/mobile_service.png" alt=""></a>
+                      <p>মোবাইল সেবা</p>
+                    </div>
+                    <div class="col-lg-2 text-center">
+                      <a href="#"><img src="./assets/image/tab/transport.png" alt=""></a>
+                      <p>হেল্পডেস্ক</p>
+                  </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">
+                <div class="row">
+                    <div class="col-lg-2 text-center">
+                      <a href="#"><img src="./assets/image/Tab/your_question.png" alt=""></a>
+                      <p>কৃষি</p>
+                    </div>
+                    <div class="col-lg-2 text-center">
+                      <a href="#"><img src="./assets/image/Tab/postal.png" alt=""></a>
+                      <p>
+                        কল সেন্টার                                </p>
+                    </div>
+                    <div class="col-lg-2 text-center">
+                      <a href="#"><img src="./assets/image/Tab/tin.png" alt=""></a>
+                      <p>মৎস্য ও প্রাণী</p>
+                    </div>
+                    <div class="col-lg-2 text-center">
+                      <a href="#"><img src="./assets/image/Tab/mobile_service.png" alt=""></a>
+                      <p>মোবাইল সেবা</p>
+                    </div>
+                    <div class="col-lg-2 text-center">
+                      <a href="#"><img src="./assets/image/tab/transport.png" alt=""></a>
+                      <p>হেল্পডেস্ক</p>
+                  </div>
+                </div>
+            </div>
+          </div>
+              </div> 
+              <!-- tab end -->
